@@ -32,7 +32,7 @@ long cnt;
 
 void report()
 {
-	fprintf(stderr,"COUNT|%ld|1|lps\n", iter);
+	fprintf(stderr,"COUNT|%lu|1|lps\n", iter);
 	exit(0);
 }
 
