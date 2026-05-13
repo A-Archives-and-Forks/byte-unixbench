@@ -299,7 +299,7 @@ int w_test(int timeSecs)
         /* stop clock */
         end = getFloatTime();
         write_score = (long) ((double) counted / ((end - start) * count_per_k));
-        printf("Write done: %ld in %.4f, score %ld\n",
+        printf("Write done: %lu in %.4f, score %ld\n",
                             counted, end - start, write_score);
 
         /*
@@ -363,7 +363,7 @@ int r_test(int timeSecs)
         /* stop clock */
         end = getFloatTime();
         read_score = (long) ((double) counted / ((end - start) * count_per_k));
-        printf("Read done: %ld in %.4f, score %ld\n",
+        printf("Read done: %lu in %.4f, score %ld\n",
                             counted, end - start, read_score);
 
         /*
@@ -445,7 +445,7 @@ int c_test(int timeSecs)
         /* stop clock */
         end = getFloatTime();
         copy_score = (long) ((double) counted / ((end - start) * count_per_k));
-        printf("Copy done: %ld in %.4f, score %ld\n",
+        printf("Copy done: %lu in %.4f, score %ld\n",
                             counted, end - start, copy_score);
 
         /*
